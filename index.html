@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Api</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <script src="main.js" type="text/javascript" defer></script>
 </head>
 <body>
 <div class= "card">
     <div class="search">
         <input type="text" placeholder="Enter city name"
-        spellcheck="false" autocomplete="off">
+        spellcheck="false" autocomplete="off" >
         <button><img src="images/search.png" ></button>
     </div>
     <div class="error">
-        <p>invaild city name</p>
+        <p style="color:red;">invaild city name</p>
     </div>
     <div class="weather">
         <img src="images/rain.png" class="weather-icon">
@@ -41,14 +43,14 @@
     </div>
 </div>
 
-<script>
+<!-- <script>
     const apiKey= "3f1754296d36a750c964222f599add3a";
     const apiUrl ="https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
     const searchBox = document.querySelector(".search input")
     const searchBtn = document.querySelector(".search button")
     const weatherIcon = document.querySelector(".weather-icon")
     async function checkWeather(city){
-        const response =await fetch(`${apiUrl}` + city+ `&appid=${apiKey}`);
+        const response =await fetch(`${apiUrl}` + city+ `&appid=${apiKey}`)
         if(response.status == "404"){
             
             document.querySelector(".error").style.display ="block";
@@ -89,7 +91,7 @@
         checkWeather(searchBox.value);
     })
    
-</script>
+</script> -->
     
 </body>
 </html>

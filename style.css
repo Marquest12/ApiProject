@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding: 0;
-    font-family: 'poppins',sans-serif;
+    font-family: Lobster,sans-serif,Helvetica;
     box-sizing: border-box;
 }
 body{
@@ -32,10 +32,13 @@ body{
     color:#555;
     padding:10px 25px;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 35px;
     flex: 1;
     margin-right: 16px;
     font-size: 18px;
+    border-color:black;
+    border-width: 1px;
+    border-style:solid;
 
 }
 
@@ -51,11 +54,13 @@ body{
 
 .search button img{
     width:16px;
+    
 }
 
 .weather-icon{
     width: 170px;
     margin-top:30px;
+    
 }
 
 .weather h1{
